@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Registered</h1>
+    <form action="/movieCheck" method="post">
+        <input type="text" name="txtfilm" id="txtfilm">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
