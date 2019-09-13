@@ -30,7 +30,7 @@ def login_post():
         print(email)
         print(user)
         print(password)
-        return redirect(url_for('admin.profile'))
+        return redirect(url_for('admin.Adminprofile'))
     else:
         login_user(user, remember=remember)
         return redirect(url_for('main.profile'))
