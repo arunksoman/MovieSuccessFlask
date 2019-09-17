@@ -5,16 +5,203 @@
 {% block content %}
 <div class="column is-4 is-offset-4">
     <h3>Add Movie Details</h3>
-    <div class="box">
-        <form method="POST" action="AddMovie">
-            <div class="field">
-                <div class="control">
-                    <input class="input" type="text" name="txtname" value="{{ movieName }}" placeholder="Enter Movie" autofocus="">
-                </div>
-            </div>
+        <form method="POST" action="AddMore">
+            <table align="center">
+                <tr>
+                    <td>
+                        Color or B/W
+                    </td>
+                    <td>
+                        <input type="text" name="color" value="{{ moviedata.0 }}" placeholder="Enter Movie" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Title
+                    </td>
+                    <td>
+                        <input type="text" name="title" value="{{ moviedata.1 }}" placeholder="Enter Movie" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Year
+                    </td>
+                    <td>
+                        <input type="text" name="year" value="{{ moviedata.2 }}" placeholder="Enter Movie" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Director
+                    </td>
+                    <td>
+                        <input type="text" name="director" value="{{ moviedata.3 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Runtime
+                    </td>
+                    <td>
+                        <input type="text" name="runtime" value="{{ moviedata.4 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Genre
+                    </td>
+                    <td>
+                        <input type="text" name="genre" value="{{ moviedata.5 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor 1
+                    </td>
+                    <td>
+                        <input type="text" name="actor1" value="{{ moviedata.6 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor 2
+                    </td>
+                    <td>
+                        <input type="text" name="actor2" value="{{ moviedata.7 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor 3
+                    </td>
+                    <td>
+                        <input type="text" name="actor3" value="{{ moviedata.8 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Language
+                    </td>
+                    <td>
+                        <input type="text" name="language" value="{{ moviedata.9 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country
+                    </td>
+                    <td>
+                        <input type="text" name="country" value="{{ moviedata.10 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        No. of Votes
+                    </td>
+                    <td>
+                        <input type="text" name="numvotes" value="{{ moviedata.11 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rating
+                    </td>
+                    <td>
+                        <input type="text" name="rating" value="{{ moviedata.12 }}" placeholder="Enter Movie" autofocus="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor1 FB Likes
+                    </td>
+                    <td>
+                    <input type="text" name="actor1fb" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor2 FB Likes
+                    </td>
+                    <td>
+                        <input type="text" name="actor2fb" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Actor3 FB Likes
+                    </td>
+                    <td>
+                        <input type="text" name="actor3fb" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Director FB Likes
+                    </td>
+                    <td>
+                        <input type="text" name="directorfb" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Movie FB Likes
+                    </td>
+                    <td>
+                        <input type="text" name="moviefb" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Face No. in Poster
+                    </td>
+                    <td>
+                        <input type="text" name="poster" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Budget
+                    </td>
+                    <td>
+                        <input type="text" name="budget" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gross
+                    </td>
+                    <td>
+                        <input type="text" name="gross" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Aspect Ratio
+                    </td>
+                    <td>
+                        <input type="text" name="aspectratio" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Content Rating
+                    </td>
+                    <td>
+                        <input type="text" name="contentrating" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        No. of User Reviews
+                    </td>
+                    <td>
+                        <input type="text" name="userreviews" value="">
+                    </td>
+                </tr>
+            </table>
 
-            <button class="button is-block is-info is-large is-fullwidth">Search Movie</button>
+            <button type="submit" class="">Save</button>
         </form>
-    </div>
 </div>
 {% endblock %}
